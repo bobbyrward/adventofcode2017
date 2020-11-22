@@ -9,7 +9,7 @@ use tracing_subscriber::FmtSubscriber;
 use crate::command::Command;
 
 // NOTE: Each solution module must be added here
-solution!(day01);
+solution!(day01, day02);
 
 fn input(name: &str) -> Result<String> {
     Ok(
@@ -26,6 +26,7 @@ fn digit_to_u8(digit: u8) -> Result<u8> {
     Ok(digit - b'0')
 }
 
+#[allow(dead_code)]
 /// Convert a slice of numeric bytes to an integer
 fn digits_to_i64(mut digits: &[u8]) -> Result<i64> {
     let mut sign = 1;
