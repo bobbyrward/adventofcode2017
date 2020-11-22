@@ -11,7 +11,7 @@ use crate::command::Command;
 use crate::point::Point;
 
 // NOTE: Each solution module must be added here
-solution!(day01, day02, day03, day04);
+solution!(day01, day02, day03, day04, day05);
 
 fn input(name: &str) -> Result<String> {
     Ok(
