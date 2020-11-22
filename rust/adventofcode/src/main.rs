@@ -1,15 +1,17 @@
 #[macro_use]
 mod args;
 mod command;
+mod point;
 
 use anyhow::{anyhow, Context, Result};
 use clap::Clap;
 use tracing_subscriber::FmtSubscriber;
 
 use crate::command::Command;
+use crate::point::Point;
 
 // NOTE: Each solution module must be added here
-solution!(day01, day02);
+solution!(day01, day02, day03);
 
 fn input(name: &str) -> Result<String> {
     Ok(
